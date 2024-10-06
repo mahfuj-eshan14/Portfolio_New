@@ -2,6 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Times New Roman', Times, serif;
 }
 html{
     /* font-size: 62.5%; */
@@ -454,74 +455,66 @@ h1{
 
 
 
+/* CSS for phones */
+@media (max-width:575.98px) {
+    /* .container{
+        max-width: 460px;
+    } */
+    .hero_container{
+        
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column-reverse;
+        min-height: 100vh;
+    
+    }
+   
+    nav{
+        flex-direction: column;
+        width: 100vw;
+    }
+    .nav_right{
+        
+        flex-direction: column;
+        align-items: center;
+        margin: 0;
+    }
+    .navbar_container{
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        align-items: start;
+    } */
+    .nav_list_link{
+        display:block;
+    }
+    /* .nav_left_items{
+        
+    } */
 
+}
+/* for tablet */
+@media (min-width: 576px) and (max-width: 767.98px) {
+    .container{
+        max-width: 750px;
+    }
+    
+}
+/* CSS for medium tablets or small desktops */
+@media (min-width: 768px) and (max-width: 991.98px) {
+    
+  }
+ /* CSS for desktops */
+@media  (min-width: 992px) {
+    .nav_left_items li i{
+        display: none;
+       }
+       
+}
 
 
  /* 
-.navbar_container {
-    list-style: none;
-    width: 100%;
-    color: #fff;
-    background-color: rgba(0, 0, 0, 0.308);
-    position: sticky;
-    top: 0;
-    z-index: 10;
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
-    flex-wrap: wrap;
-}
 
-.nav_list {
-    
-    height: 3rem;
-    
-}
-.nav_list_link{
-    height: 100%;
-    text-decoration: none;
-    color: #fff;
-    position: relative;
-    z-index: 0;
-    cursor: pointer;
-    
-    padding: 0 20px;
-    display: flex;
-    align-items: center;
-    
-} 
-
-/* nav li:nth-child(1){
-    margin-right: auto;
-    margin-left: 20px;
- 
-} */
-/* nav a::after{
-    content: '';
-    background: linear-gradient(90deg, rgba(81,80,84,1) 0%, rgba(68,68,128,1) 28%, rgb(68, 102, 109) 100%);
-    height: 100%;
-    width: 0%;
-    position: absolute;
-    z-index: -1;
-    top: 0;
-    left: 0;
-    transition: 150ms ease-in-out;
-}
-nav a:hover::after{
-    width: 100%;
-    
-}
-
-nav h2 > span {
-    font-size: 40pt;
-    color: blue;
-}
-
-nav ul li h2 {
-    
-    font-size: 20pt;
-    
-} 
 
 @media (max-width: 480px) {
     .navbar_container{
