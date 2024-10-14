@@ -434,14 +434,54 @@ h1{
     font-size: 1.2rem;
 }
 
-
-
-
-
-
-
-
-
+/* ============  Work ============= */
+.portfolio{
+    padding: 5rem 2rem;
+    min-height: 100vh;
+}
+.services_container{
+    padding-top: 4rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+img{
+    width: 23rem;
+    height: 30rem;
+    border-radius: .2rem;
+    position: relative;
+}
+.services{
+    position: relative;
+    margin: 0 auto;
+    overflow: hidden;
+}
+.services_container .services .intro{
+    width: 23rem;
+    height: 5rem;
+    background-color: #1e385a6e;
+    padding: 1rem;
+    position: absolute;
+    bottom: 2px;
+}
+.services:hover{
+    transform: scale(1.1);
+    cursor: pointer;
+}
+.services_container .services .intro p{
+    margin-top: 10px;
+    font-size: 1.2rem;
+    visibility: hidden;
+}
+.services:hover .intro{
+    height: 9rem;
+    transition: .5s;
+    
+}
+.services:hover .intro p{
+    visibility: visible;
+    
+}
 
 
 
@@ -526,7 +566,3 @@ h1{
     /* .nav_list_link{
         display:block;
     } */
-
-    
-
-    
